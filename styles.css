@@ -1,0 +1,78 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  max-width: 1448px;
+  margin: 0 auto !important;
+}
+
+.bg1 {
+  background-image: url(images/pic_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1448.15px;
+  min-height: 1093px;
+}
+
+/* Header
+============================= */
+
+.courses, .pricing, .login {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+header {
+  max-width: 1103.25px;
+  padding-top: 35.02px !important;
+}
+
+header img {
+flex-shrink: 0;
+}
+
+.smile_white {
+  height: 29.46px;
+  width: 37.88px;
+}
+
+.smile_school {
+  height: 29.46px;
+  width: 112.93px;
+}
+
+.logo {
+  width: 167px;
+}
+
+.nav_box {
+  width: 234px;
+}
+
+/* Banner_Section
+============================= */
+
+.banner h1 {
+  font-size: 120px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: normal !important;
+  height: 151px !important;
+  margin-top: 155.52px !important;
+}
+
+.p_box {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  max-width: 253px
+}
