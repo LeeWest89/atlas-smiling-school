@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif !important;
   max-width: 1448px;
   margin: 0 auto !important;
 }
@@ -75,4 +75,19 @@ flex-shrink: 0;
   font-weight: 700;
   line-height: normal;
   max-width: 253px
+}
+
+button {
+  background: #C271FF !important;
+  min-width: 162px;
+  height: 44px;
+  flex-shrink: 0;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important
+}
+
+button:hover{
+  opacity: 0.9;
 }
