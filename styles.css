@@ -6,10 +6,19 @@
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif !important;
+  font-family: "Source Sans Pro", "Coiny"!important;
   max-width: 1448px;
   margin: 0 auto !important;
 }
+
+
+/* Variables
+============================= */
+
+:root {
+  --color-pink: #C271FF;
+}
+
 
 .bg1 {
   background-image: url(images/pic_1.jpg);
@@ -31,7 +40,6 @@ body {
 }
 
 header {
-  max-width: 1103.25px;
   padding-top: 35.02px !important;
 }
 
@@ -61,33 +69,61 @@ flex-shrink: 0;
 ============================= */
 
 .banner h1 {
-  font-size: 120px !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  line-height: normal !important;
-  height: 151px !important;
+  font-size: 120px;
+  height: 151px; 
   margin-top: 155.52px !important;
+  margin-bottom: -10px !important;
 }
 
 .p_box {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  max-width: 253px
+  max-width: 253px;
+  margin-bottom: 38px !important;
 }
 
 button {
-  background: #C271FF !important;
+  background: var(--color-pink) !important;
   min-width: 162px;
   height: 44px;
   flex-shrink: 0;
   font-size: 14px !important;
   font-style: normal !important;
   font-weight: 600 !important;
-  line-height: normal !important
+  line-height: normal !important;
+  margin-bottom: 168px !important;
 }
 
 button:hover{
   opacity: 0.9;
+}
+
+h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 87.2px !important;
+}
+
+span {
+  color: var(--color-pink);
+  font-size: 32px;
+}
+
+.banner h3 {
+font-size: 18px;
+line-height: 27px;
+}
+
+.banner p {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.banner img {
+  height: 150px;
+  width: 150px;
+}
+
+.pros {
+  max-width: 150px;
 }
