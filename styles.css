@@ -41,6 +41,8 @@ body {
 
 header {
   padding-top: 35.02px !important;
+  margin-left: 11.75% !important;
+  margin-right: 11.75% !important;
 }
 
 header img {
@@ -70,9 +72,7 @@ flex-shrink: 0;
 
 .banner h1 {
   font-size: 120px;
-  height: 151px; 
   margin-top: 155.52px !important;
-  margin-bottom: -10px !important;
 }
 
 .p_box {
@@ -120,10 +120,36 @@ line-height: 27px;
 }
 
 .banner img {
-  height: 150px;
-  width: 150px;
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.pros_box {
+  max-width: 1000.84px;
 }
 
 .pros {
   max-width: 150px;
+}
+
+/* Tablet
+============================= */
+
+@media (max-width: 768px) {
+
+  /* Header
+============================= */
+  header {
+    margin-left: 5.1% !important;
+    margin-right: 5.1% !important;
+  }
+
+  /*Banner
+============================= */
+}
+
+@media (max-wdith: 576px) {
+
+  /*Banner
+============================= */
 }
