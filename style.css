@@ -175,6 +175,13 @@ footer p{
 
 @media (max-width: 576px) {
 
+  /* Mobile carousel
+============================= */
+
+  .t_carousel {
+    max-width: 348px !important;
+  }
+
   /* Mobile Footer
 ============================= */
 
@@ -186,5 +193,7 @@ footer p{
     text-align: center;
   }
 
-  .socials {margin-top: 45px !important;}
+  .socials {
+    margin-top: 45px !important;
+  }
 }
