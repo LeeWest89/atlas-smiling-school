@@ -51,6 +51,56 @@ body::-webkit-scrollbar {
   min-height: 1093px;
 }
 
+/* Quote
+============================= */
+
+.quote {
+  background-color: var(--color-pink);
+  min-height: 392px;
+}
+
+.quote_container {
+  max-width: 1067.7px;
+  margin-left: 11.36% !important;
+  margin-right: 11.36% !important;
+}
+
+.pros_pink {
+  width: 160px;
+  margin-top: 110px !important;
+}
+
+blockquote {
+  margin-top: 110px !important;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33.6px;
+}
+
+cite {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33.6px;
+}
+
+.occupation {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 33.6px
+}
+
+.wal, .war {
+  height: 62.67px;
+  width: 29.045px;
+  flex-shrink: 0;
+}
+
+.q_next, .q_prev {
+  margin-top: 156.51px !important;
+}
+
 /* Membership
 ============================= */
 
@@ -67,6 +117,16 @@ body::-webkit-scrollbar {
 
 .latest_videos span, h3, #time {
   color: var(--color-pink);
+}
+
+.latest_videos h1 {
+  font-size: 32px;
+  font-weight: 300;
+
+}
+
+.latest_videos span {
+  font-weight: 700;
 }
 
 .latest_videos h2 {
@@ -144,6 +204,10 @@ footer p{
 
 @media (max-width: 768px) {
 
+  blockquote {
+    margin-top: 75px !important;
+  }
+
   /* Tablet Carousel
 ============================= */
 
@@ -174,6 +238,30 @@ footer p{
 ============================= */
 
 @media (max-width: 576px) {
+
+  /* Quote
+============================= */
+
+  .quote_container {
+    max-width: 346px;
+    margin-left: 4% !important;
+    margin-right: 4% !important;
+  }
+
+  .pros_pink {
+    margin-right: 0 !important;
+  }
+
+  blockquote {
+    margin-top: 24px !important;
+  }
+
+  /* Quote carousel
+============================= */
+
+  .q_next, .q_prev {
+    margin-top: 156.51px !important;
+  }
 
   /* Mobile carousel
 ============================= */
