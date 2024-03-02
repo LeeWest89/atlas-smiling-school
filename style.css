@@ -51,6 +51,13 @@ body::-webkit-scrollbar {
   min-height: 1093px;
 }
 
+button {
+  width: 162px;
+  height: 44px;
+  flex-shrink: 0;
+  background: var(--color-pink) !important;
+}
+
 /* Quote
 ============================= */
 
@@ -106,6 +113,55 @@ cite {
 
 .membership {
   background-color: var(--background);
+}
+
+.membership span {
+  color: var(--color-pink);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.membership h1 {
+  padding-top: 70px !important;
+  margin-bottom: 58px !important;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.mem_box, .mem_box_r, .mem_box_l {
+  max-width: 257px;
+  height: 153px;
+  flex-shrink: 0;
+  margin-bottom: 85px !important;
+}
+
+.mem_box_r {
+  margin-right: 11.33% !important;
+}
+
+.mem_box_l {
+  margin-left: 11.33% !important;
+}
+
+.smile_purple {
+  width: 45px;
+  height: 36px;
+  flex-shrink: 0;
+  margin-left: 41.25% !important;
+  margin-right: 41.25% !important;
+}
+
+.membership h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.membership p {
+  width: 215px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 /* Latest Videos
@@ -204,8 +260,23 @@ footer p{
 
 @media (max-width: 768px) {
 
+  body {
+    max-width: 768px !important;
+  }
+
   blockquote {
     margin-top: 75px !important;
+  }
+
+  /* Tablet Membership
+============================= */
+
+  .mem_box_r {
+    margin-right: 0 !important;
+  }
+  
+  .mem_box_l {
+    margin-left: 0 !important;
   }
 
   /* Tablet Carousel
@@ -238,6 +309,10 @@ footer p{
 ============================= */
 
 @media (max-width: 576px) {
+
+  body {
+    max-width: 576px !important;
+  }
 
   /* Quote
 ============================= */
