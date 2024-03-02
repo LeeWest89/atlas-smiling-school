@@ -157,6 +157,10 @@ footer p{
     flex-shrink: 0;
   }
 
+  .c_next, .c_prev {
+    margin-top: 200.51px !important;
+  }
+
   /* Tablet Footer
 ============================= */
 
