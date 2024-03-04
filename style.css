@@ -47,6 +47,7 @@ body::-webkit-scrollbar {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: var(--background);
   max-width: 1448.15px;
   min-height: 1093px;
 }
@@ -68,7 +69,7 @@ button:hover {
 .head_box {
   max-width: 1103px;
   padding-top: 35px !important;
-  margin-bottom: 155px !important;
+  margin-bottom: 131px !important;
   margin-right: 11.81% !important;
   margin-left: 11.81% !important;
 }
@@ -86,6 +87,24 @@ header a {
 
 .banner h1 {
   font-size: 120px;
+}
+
+.p_box {
+  max-width: 253px;
+  margin-bottom: 38px !important;
+}
+
+.banner h2 {
+  margin-top: 168px !important;
+  margin-bottom: 87.15px !important;
+}
+
+.banner span {
+  color: var(--color-pink);
+}
+
+.pros_container {
+  max-width: 1009px !important;
 }
 
 .pros_box {
@@ -119,6 +138,7 @@ header a {
   max-width: 1067.7px;
   margin-left: 11.36% !important;
   margin-right: 11.36% !important;
+  margin-bottom: 110px !important;
 }
 
 .pros_pink {
@@ -193,14 +213,15 @@ cite {
   width: 45px;
   height: 36px;
   flex-shrink: 0;
-  margin-left: 41.25% !important;
-  margin-right: 41.25% !important;
+  /* margin-left: 41.25% !important;
+  margin-right: 41.25% !important; */
 }
 
 .membership h2 {
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
+  flex-shrink: 0;
 }
 
 .membership p {
@@ -366,7 +387,65 @@ footer p{
     max-width: 576px !important;
   }
 
-  /* Quote
+  /* Header
+============================= */
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .menu {
+    position: relative;
+    width: 30px;
+    cursor: pointer;
+    top: 35px;
+    right: 94.5%;
+    padding-left: 5.5%;
+  }
+
+  .holberton_school-icon-menu input:checked {
+    color: var(--color-pink) !important;
+  }
+
+  .sm_head_box {
+    max-width: 114px !important;
+  }
+
+  .logo_top {
+    margin-bottom: 174px !important;
+  }
+
+  .sm_nav {
+    display: none;
+  }
+
+  .menu:has(input:checked) ~ .sm_nav {
+    display: contents;
+  }
+
+  .login {
+    margin-bottom: 174px !important;
+  }
+
+  .menu.menu:has(input:checked) ~ .logo_top {
+    margin-bottom: 16px !important;
+  }
+
+
+
+  /* Banner
+============================= */
+
+  .banner h1  {
+    font-size: 61px;
+  }
+
+  .pros_container {
+    max-width: 346px !important;
+    padding-bottom: 96px !important;
+  }
+
+  /* Mobile Quote
 ============================= */
 
   .quote_container {
@@ -383,7 +462,8 @@ footer p{
     margin-top: 24px !important;
   }
 
-  /* Membership
+
+  /* Mobile Membership
 ============================= */
 
   .mem_container {
