@@ -1,53 +1,20 @@
-*, *::before, *::after {
+*, *::after, *::before {
   box-sizing: border-box;
   margin: 0 !important;
   padding: 0 !important;
   border: 0 !important;
 }
 
-body {
-  font-family: "Source Sans Pro", "Coiny"!important;
-  max-width: 1448px;
-  margin: 0 auto !important;
-}
-
-
 /* Variables
 ============================= */
 
 :root {
   --color-pink: #C271FF;
+  --background: #071629;
 }
 
-
-.bg1 {
-  background-image: url(images/pic_1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 1448.15px;
-  min-height: 1093px;
-}
-
-/* Header
+/* Logo
 ============================= */
-
-.courses, .pricing, .login {
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-header {
-  padding-top: 35.02px !important;
-  margin-left: 11.75% !important;
-  margin-right: 11.75% !important;
-}
-
-header img {
-flex-shrink: 0;
-}
 
 .smile_white {
   height: 29.46px;
@@ -59,20 +26,89 @@ flex-shrink: 0;
   width: 112.93px;
 }
 
-.logo {
-  width: 167px;
+/* Body
+============================= */
+
+body {
+  font-family: "Source Sans Pro", sans-serif !important;
+  max-width: 1448px;
+  margin: 0 auto !important;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Background Image
+============================= */
+
+.bg1 {
+  background-image: url(images/pic_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background);
+  max-width: 1448px;
+  min-height: 1093px;
+}
+
+.bg2 {
+  background-image: url(images/pic_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background);
+  max-width: 1448px;
+}
+
+.bg3 {
+  background-image: url(images/pic_3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background);
+  max-width: 1448px;
+}
+
+button {
+  width: 162px !important;
+  height: 44px;
+  flex-shrink: 0;
+  background: var(--color-pink) !important;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Header
+============================= */
+
+.head_box {
+  max-width: 1103px;
+  padding-top: 35px !important;
+  margin-bottom: 131px !important;
+  margin-right: 11.81% !important;
+  margin-left: 11.81% !important;
 }
 
 .nav_box {
-  width: 234px;
+  max-width: 233px !important;
 }
 
-/* Banner_Section
+header a {
+  font-size: 12px;
+}
+
+header a:hover {
+  color: var(--color-pink) !important;
+}
+
+/* Banner
 ============================= */
 
 .banner h1 {
   font-size: 120px;
-  margin-top: 155.52px !important;
 }
 
 .p_box {
@@ -80,56 +116,232 @@ flex-shrink: 0;
   margin-bottom: 38px !important;
 }
 
-button {
-  background: var(--color-pink) !important;
-  min-width: 162px;
-  height: 44px;
-  flex-shrink: 0;
-  font-size: 14px !important;
-  font-style: normal !important;
-  font-weight: 600 !important;
-  line-height: normal !important;
-  margin-bottom: 168px !important;
+.banner h2 {
+  margin-top: 168px !important;
+  margin-bottom: 87.15px !important;
 }
 
-button:hover{
-  opacity: 0.9;
+.banner span {
+  color: var(--color-pink);
 }
 
-h2 {
-  font-size: 32px;
+.pros_container {
+  max-width: 1009px !important;
+}
+
+.pros_box {
+  max-width: 150px !important;
+}
+
+.ph3 {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 27px;
+}
+
+.pros p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.pros {
+  width: 150px;
+}
+
+/* Quote
+============================= */
+
+.quote {
+  background-color: var(--color-pink);
+  min-height: 392px;
+}
+
+.quote_container {
+  max-width: 1067.7px;
+  margin-left: 11.36% !important;
+  margin-right: 11.36% !important;
+  margin-bottom: 110px !important;
+}
+
+.pros_pink {
+  width: 160px;
+  margin-top: 110px !important;
+}
+
+blockquote {
+  margin-top: 110px !important;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33.6px;
+}
+
+cite {
+  font-size: 22px;
   font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  margin-bottom: 87.2px !important;
+  font-weight: 400;
+  line-height: 33.6px;
 }
 
-span {
+.occupation {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 33.6px
+}
+
+.wal, .war {
+  height: 62.67px;
+  width: 29.045px;
+  flex-shrink: 0;
+}
+
+.q_next, .q_prev {
+  margin-top: 156.51px !important;
+}
+
+/* Membership
+============================= */
+
+.membership {
+  background-color: var(--background);
+}
+
+.membership span {
   color: var(--color-pink);
   font-size: 32px;
+  font-weight: 700;
 }
 
-.banner h3 {
-font-size: 18px;
-line-height: 27px;
+.membership h1 {
+  padding-top: 70px !important;
+  margin-bottom: 58px !important;
+  font-size: 32px;
+  font-weight: 300;
 }
 
-.banner p {
+.mem_container {
+  width: 1112px;
+  height: 153px;
+  margin-bottom: 85px !important;
+  /* flex-wrap: nowrap; */
+}
+
+.mem_box {
+  width: 257px;
+  height: 153px;
+}
+
+.smile_purple {
+  width: 45px;
+  height: 36px;
+  flex-shrink: 0;
+  /* margin-left: 41.25% !important;
+  margin-right: 41.25% !important; */
+}
+
+.membership h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  flex-shrink: 0;
+}
+
+.membership p {
+  max-width: 215px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/* Latest Videos
+============================= */
+
+.latest_videos h1, h2, p {
+  color: var(--background);
+}
+
+.latest_videos span, h3, #time {
+  color: var(--color-pink);
+}
+
+.latest_videos h1 {
+  font-size: 32px;
+  font-weight: 300;
+
+}
+
+.latest_videos span {
+  font-weight: 700;
+}
+
+.latest_videos h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.latest_videos h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.latest_videos p {
+  color: rgba(7, 22, 41, 0.50);
+  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.banner img {
-  max-height: 150px;
-  max-width: 150px;
+.latest_videos #time {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 27px;
 }
 
-.pros_box {
-  max-width: 1000.84px;
+.latest_videos .container {
+  margin-top: 87px !important;
+  margin-bottom: 87px !important;
+  max-width: 1110px;
 }
 
-.pros {
-  max-width: 150px;
+.card {
+  margin-top: 75PX !important;
+  width: 255px !important;
+  height: 335px !important;
+  flex-shrink: 0;
+}
+.play-img {
+  height: 64px !important;
+  width: 64px !important;
+  margin-top: 45px !important;
+}
+
+.small_pro {
+  width: 30px;
+}
+
+.star {
+  width: 15px;
+}
+
+.reviewer {
+  width: 129px;
+}
+
+/* Footer
+============================= */
+
+footer {
+  background-color: var(--background);
+}
+
+.logo_box {
+  padding-top: 95px !important;
+  margin-bottom: 70px !important;
+}
+
+footer p{
+  opacity: 0.3517;
 }
 
 /* Tablet
@@ -137,19 +349,343 @@ line-height: 27px;
 
 @media (max-width: 768px) {
 
-  /* Header
-============================= */
-  header {
-    margin-left: 5.1% !important;
-    margin-right: 5.1% !important;
+  body {
+    max-width: 768px !important;
   }
 
-  /*Banner
+  blockquote {
+    margin-top: 75px !important;
+  }
+
+  /* Header
+============================= */
+
+.head_box {
+  margin-right: 5% !important;
+  margin-left: 5% !important;
+}
+
+  /* Tablet Membership
+============================= */
+
+  .mem_container {
+    width: 568px;
+    height: 364px;
+    /* flex-wrap: wrap; */
+  }
+
+  /* Tablet Carousel
+============================= */
+
+  .t_carousel {
+    max-width: 692px !important;
+  }
+
+  .bal, .bar {
+    height: 62.67px;
+    width: 29.045px;
+    flex-shrink: 0;
+  }
+
+  .c_next, .c_prev {
+    margin-top: 200.51px !important;
+  }
+
+  /* Tablet Footer
+============================= */
+
+  .logo_box {
+    padding-top: 110px !important;
+    margin-bottom: 59px !important;
+  }
+}
+
+/* Mobile
+============================= */
+
+@media (max-width: 576px) {
+
+  body {
+    max-width: 576px !important;
+  }
+
+  /* Header
+============================= */
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .menu {
+    position: relative;
+    width: 30px;
+    cursor: pointer;
+    top: 35px;
+    right: 94.5%;
+    padding-left: 5.5%;
+  }
+
+  .holberton_school-icon-menu input:checked {
+    color: var(--color-pink) !important;
+  }
+
+  .sm_head_box {
+    max-width: 114px !important;
+  }
+
+  .logo_top {
+    margin-bottom: 174px !important;
+  }
+
+  .sm_nav {
+    display: none;
+  }
+
+  .menu:has(input:checked) ~ .sm_nav {
+    display: contents;
+  }
+
+  .login {
+    margin-bottom: 174px !important;
+  }
+
+  .menu.menu:has(input:checked) ~ .logo_top {
+    margin-bottom: 16px !important;
+  }
+
+
+
+  /* Banner
+============================= */
+
+  .banner h1  {
+    font-size: 61px;
+  }
+
+  .pros_container {
+    max-width: 346px !important;
+    padding-bottom: 96px !important;
+  }
+
+  /* Mobile Quote
+============================= */
+
+  .quote_container {
+    max-width: 346px;
+    margin-left: 4% !important;
+    margin-right: 4% !important;
+  }
+
+  .pros_pink {
+    margin-right: 0 !important;
+  }
+
+  blockquote {
+    margin-top: 24px !important;
+  }
+
+
+  /* Mobile Membership
+============================= */
+
+  .mem_container {
+    width: 257px;
+    height: 759px;
+  }
+
+  /* Quote carousel
+============================= */
+
+  .q_next, .q_prev {
+    margin-top: 156.51px !important;
+  }
+
+  /* Mobile carousel
+============================= */
+
+  .t_carousel {
+    max-width: 348px !important;
+  }
+
+  /* Mobile Footer
+============================= */
+
+  .logo_box {
+    padding-top: 50px !important;
+  }
+
+  .logo, .socials {
+    text-align: center;
+  }
+
+  .socials {
+    margin-top: 45px !important;
+  }
+}
+
+
+
+  /* Pricing
+============================= */
+
+  /* Pricing Banner
+============================= */
+
+
+.pricing_banner h1 {
+  font-size: 60px !important;
+  margin-top: 75px !important;
+  margin-bottom: 55px !important;
+}
+
+.t_box {
+  max-width: 1118px;
+  min-height: 592px;
+  padding-bottom: 76px !important;
+}
+.t_lh{
+  line-height: 77px;
+}
+
+.b-lh {
+  line-height: 150px;
+}
+
+
+td {
+  font-size: 18px;
+}
+
+.month_year {
+  font-size: 44px;
+}
+
+.per_month {
+  font-size: 12px;
+  opacity: 0.503;
+}
+
+#signal {
+  width: 88px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+  /* Pricing FAQ
+============================= */
+
+.faq_box {
+  max-width: 920px;
+  min-height: 707px;
+  margin-bottom: 127px !important;
+  margin-top: 74px !important;
+  color: var(--background);
+}
+
+.faq_box h1 {
+  margin-bottom: 74px !important;
+  font-size: 60px;
+}
+
+.faq {
+  max-width: 350px !important;
+  min-height: 242px !important;
+}
+
+
+@media (max-width: 768px) {
+
+  /*Tablet Pricing Banner
+============================= */
+
+  .pricing_banner p {
+    font-size: 32px !important;
+  }
+
+  /*Tablet Pricing FAQ
+============================= */
+
+  .faq_box {
+    margin-left: 12.9% !important;
+    margin-right: 12.9% !important;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  /*Mobile Pricing Banner
+============================= */
+  .pricing_banner p {
+    font-size: 24px !important;
+  }
+
+  /*Mobile Pricing FAQ
+============================= */
+
+}
+
+  /*Courses
+============================= */
+
+  /*Courses Header
+============================= */
+
+.bg3 .head_box {
+  margin-bottom: 30px !important;
+}
+
+  /*Courses Banner
+============================= */
+
+.banner_courses blockquote {
+  font-family: Coiny;
+  font-size: 32px;
+  margin-top: 0 !important;
+}
+
+.banner_courses span {
+  color: var(--color-pink);
+}
+
+.banner_courses cite {
+  font-size: 12px;
+}
+
+.catnbox {
+  max-width: 486px !important;
+  height: 88px !important;
+  flex-shrink: 0;
+  margin-bottom: 33px !important;
+}
+
+  /*Courses Topics
+============================= */
+
+.topics {
+  max-width: 1448px !important;
+  min-height: 138px !important;
+  background-color: var(--color-pink);
+}
+
+@media (max-width: 768px) {
+
+  /*Tablet Courses Banner
 ============================= */
 }
 
-@media (max-wdith: 576px) {
 
-  /*Banner
+@media (max-width: 576px) {
+
+  /*Tablet Courses Banner
 ============================= */
+
+
+  .bg3 .logo_top {
+    margin-bottom: 25px !important;
+  }
+
+  .bg3 .login {
+    margin-bottom: 25px !important;
+  }
 }
