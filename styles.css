@@ -49,7 +49,6 @@ body::-webkit-scrollbar {
   background-size: cover;
   background-color: var(--background);
   max-width: 1448px;
-  min-height: 1093px;
 }
 
 .bg2 {
@@ -70,15 +69,18 @@ body::-webkit-scrollbar {
   max-width: 1448px;
 }
 
-button {
+.btn-primary {
   width: 162px !important;
   height: 44px;
   flex-shrink: 0;
   background: var(--color-pink) !important;
 }
 
-button:hover {
+.btn-primary:hover {
   opacity: 0.9;
+}
+.bg-primary {
+  background-color: var(--color-pink);
 }
 
 /* Header
@@ -127,21 +129,11 @@ header a:hover {
 
 .pros_container {
   max-width: 1009px !important;
+  padding-bottom: 98px !important;
 }
 
 .pros_box {
   max-width: 150px !important;
-}
-
-.ph3 {
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 27px;
-}
-
-.pros p {
-  font-size: 16px;
-  line-height: 24px;
 }
 
 .pros {
@@ -171,22 +163,16 @@ header a:hover {
 blockquote {
   margin-top: 110px !important;
   font-size: 22px;
-  font-weight: 400;
-  line-height: 33.6px;
 }
 
-cite {
+.quote footer {
   font-size: 22px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 33.6px;
+  background-color: var(--color-pink);
 }
 
 .occupation {
   font-size: 22px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 33.6px
 }
 
 .wal, .war {
@@ -264,24 +250,8 @@ cite {
   color: var(--color-pink);
 }
 
-.latest_videos h1 {
-  font-size: 32px;
-  font-weight: 300;
-
-}
-
-.latest_videos span {
-  font-weight: 700;
-}
-
-.latest_videos h2 {
-  font-size: 16px;
-  font-weight: 700;
-}
 
 .latest_videos h3 {
-  font-size: 14px;
-  font-weight: 600;
   line-height: 27px;
 }
 
@@ -360,10 +330,11 @@ footer p{
   /* Header
 ============================= */
 
-.head_box {
-  margin-right: 5% !important;
-  margin-left: 5% !important;
-}
+  .head_box {
+    margin-right: 5% !important;
+    margin-left: 5% !important;
+  }
+
 
   /* Tablet Membership
 ============================= */
@@ -371,7 +342,6 @@ footer p{
   .mem_container {
     width: 568px;
     height: 364px;
-    /* flex-wrap: wrap; */
   }
 
   /* Tablet Carousel
@@ -425,10 +395,6 @@ footer p{
     padding-left: 5.5%;
   }
 
-  .holberton_school-icon-menu input:checked {
-    color: var(--color-pink) !important;
-  }
-
   .sm_head_box {
     max-width: 114px !important;
   }
@@ -445,7 +411,7 @@ footer p{
     display: contents;
   }
 
-  .login {
+  .navlist {
     margin-bottom: 174px !important;
   }
 
@@ -533,7 +499,7 @@ footer p{
 
 
 .pricing_banner h1 {
-  font-size: 60px !important;
+  font-size: 5rem !important;
   margin-top: 75px !important;
   margin-bottom: 55px !important;
 }
