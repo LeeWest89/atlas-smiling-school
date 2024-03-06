@@ -620,30 +620,57 @@ td {
 
 .catnbox {
   max-width: 486px !important;
-  height: 88px !important;
+  min-height: 88px !important;
   flex-shrink: 0;
-  margin-bottom: 33px !important;
+  padding-bottom: 33px !important;
 }
 
-  /*Courses Topics
+  /*Courses Search
 ============================= */
 
-.topics {
+.search {
   max-width: 1448px !important;
   min-height: 138px !important;
   background-color: var(--color-pink);
 }
 
+.holberton_school-icon-search_1 {
+  font-size: 25px !important;
+  opacity: 1;
+}
+
+.form-control {
+  opacity: 0.25;
+  width: 250px !important;
+  flex-shrink: 0;
+}
+
+  /*Courses Many_videos
+============================= */
+
+.many_videos h1 {
+  opacity: .3;
+  margin-right: 11.4% !important;
+}
+
+.mv_box {
+  max-width: 1118px !important;
+}
+
 @media (max-width: 768px) {
 
-  /*Tablet Courses Banner
+  /*Tablet Courses Many_videos
 ============================= */
+
+  .mv_box {
+    max-width: 690px !important;
+  }
 }
 
 
 @media (max-width: 576px) {
 
-  /*Tablet Courses Banner
+  /*Mobile Courses Banner
 ============================= */
 
 
@@ -653,5 +680,12 @@ td {
 
   .bg3 .login {
     margin-bottom: 25px !important;
+  }
+
+  /*Mobile Courses Many_videos
+============================= */
+
+  .mv_box {
+    max-width: 345px !important;
   }
 }
