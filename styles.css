@@ -76,9 +76,10 @@ body::-webkit-scrollbar {
   background: var(--color-pink) !important;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active {
   opacity: 0.9;
 }
+
 .bg-primary {
   background-color: var(--color-pink);
 }
