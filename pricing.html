@@ -21,45 +21,51 @@
 <body>
     <div class="bg2 container-fluid">
       <header>
-          <div class="sm_head_box container col pt-4 d-flex justify-content-between mx-auto flex-column">
-            <div class="d-sm-none">
-              <div class="menu">
-                <input type="checkbox" id="myCheck">
-                <label for="myCheck"><span class="holberton_school-icon-menu text-white h2"></span></label>
-              </div>
-            <div class="logo_top col-sm">
-              <div class="col-12 col-sm-1 text-center ">
-                <img class="smile_white mr-0 mr-sm-3 mb-3 mb-sm-0" src="images/smile_off.png" alt="Logo smile">
-              </div>
-              <div class="logo_words col-12 col-sm-2 text-center mb-3">
-                <img class="smile_school" src="images/logo.png" alt="Logo name">
-              </div>
+        <div class="sm_head_box container col pt-4 d-flex justify-content-between mx-auto flex-column">
+          <div class="d-sm-none">
+            <div class="navbar-toggler menu">
+              <input type="checkbox" id="myCheck">
+              <label for="myCheck"><span class="holberton_school-icon-menu text-white h2"></span></label>
             </div>
-            <div class="sm_nav">
-              <nav class="row text-center">
-                <a class="courses text-white font-weight-bold col-12" href="#">COURSES</a>
-                <a class="pricing text-white font-weight-bold col-12 mb-3 mt-3" href="#">PRICING</a>
-                <a class="login text-white font-weight-bold col-12" href="#">LOGIN</a>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <div class="head_box row justify-content-between d-none d-sm-flex">
-          <div class="row d-none d-sm-flex">
-            <div class="col text-center">
+          <div class="logo_top col-sm">
+            <div class="col-12 col-sm-1 text-center ">
               <img class="smile_white mr-0 mr-sm-3 mb-3 mb-sm-0" src="images/smile_off.png" alt="Logo smile">
             </div>
-            <div class="col text-center">
+            <div class="logo_words col-12 col-sm-2 text-center mb-3">
               <img class="smile_school" src="images/logo.png" alt="Logo name">
             </div>
           </div>
-          <nav class=" nav_box container row d-none d-sm-flex justify-content-between">
-            <a class="text-white text-decoration-none font-weight-bold" href="#">COURSES</a>
-            <a class="text-white text-decoration-none font-weight-bold" href="#">PRICING</a>
-            <a class="text-white text-decoration-none font-weight-bold" href="#">LOGIN</a>
+          <div class="sm_nav container">
+            <nav class="navbar">
+              <ul class="navlist navbar-nav mx-auto">
+                <li class="col text-center"><a class="courses text-white font-weight-bold col-12" href="#">COURSES</a></li>
+                <li class="col text-center"><a class="pricing text-white font-weight-bold col-12 mb-3 mt-3" href="#">PRICING</a></li>
+                <li class="col text-center"><a class="login text-white font-weight-bold col-12" href="#">LOGIN</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="head_box row justify-content-between d-none d-sm-flex">
+        <div class="row d-none d-sm-flex">
+          <div class="col text-center">
+            <img class="smile_white mr-0 mr-sm-3 mb-3 mb-sm-0" src="images/smile_off.png" alt="Logo smile">
+          </div>
+          <div class="col text-center">
+            <img class="smile_school" src="images/logo.png" alt="Logo name">
+          </div>
+        </div>
+        <div>
+          <nav class="nav_box navbar container d-none d-sm-flex justify-content-between">
+            <ul class="navbar-nav flex-row">
+              <li class="col-6 col-md-8"><a class="text-white text-decoration-none font-weight-bold" href="#">COURSES</a></li>
+              <li class="col-6 col-md-8"><a class="text-white text-decoration-none font-weight-bold" href="#">PRICING</a></li>
+              <li class="col-6 col-md-8"><a class="text-white text-decoration-none font-weight-bold" href="#">LOGIN</a></li>
+            </ul>
           </nav>
         </div>
-      </header>
+      </div>
+    </header>
       <section class="pricing_banner">
         <p class="text-white text-center font-weight-light h2">
           What is 
@@ -73,8 +79,8 @@
             <tbody>
               <tr class="b-lh text-center">
                 <td class= "d-none d-sm-block"></td>
-                <td class="col-4"><button class="btn-primary text-white font-weight-bold btn rounded-pill">BUY 3 MONTHS</button></td>
-                <td class="col-4"><button class="btn-primary text-white font-weight-bold btn rounded-pill">BUY 1 YEAR</button></td>
+                <td class="col col-sm-4"><button class="btn-primary text-white font-weight-bold btn rounded-pill">BUY 3 MONTHS</button></td>
+                <td class="col col-sm-4"><button class="btn-primary text-white font-weight-bold btn rounded-pill">BUY 1 YEAR</button></td>
               </tr>
               <tr class="text-center">
                 <td class="d-none d-sm-block"></td>
